@@ -9,7 +9,9 @@
 #include <stdio.h>
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+    printf("it was the best of times.\n");
+    printf("It was the worst of times.\n");
+    /* is that actually any good?
+       Maybe it needs a rewrite. */
     return 0;
 }
