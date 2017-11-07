@@ -11,7 +11,7 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // send the message "date" to the NSDate class.
-        NSDate *now = [NSDate date];
+        NSDate *now = [[NSDate alloc] init];
         NSLog(@"The new date lives at %p", now);
         // print as a string
         NSLog(@"The new date is %@", now);
@@ -23,7 +23,7 @@ int main(int argc, const char * argv[]) {
         NSDate *nowPlus = [now dateByAddingTimeInterval:(100000)];
         NSLog(@"Now + 100,000 seconds is %@", nowPlus);
         
-        // challenge
+        // chapter 12 challenge
         // use two instances of NSDate to figure out how many seconds I have been alive
         NSDateComponents *birthdayComp = [[NSDateComponents alloc] init];
         [birthdayComp setYear:1981];
@@ -37,6 +37,24 @@ int main(int argc, const char * argv[]) {
         
         double aliveInSec = [now timeIntervalSinceDate:birthday];
         NSLog(@"Number of seconds I've been alive is %f", aliveInSec);
+        
+        NSCalendar *cal = [NSCalendar currentCalendar];
+        NSUInteger day = [cal ordinalityOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitMonth forDate:now];
+        NSLog(@"This is day %lu of the month", day);
+        
+        // What is the hour in the year?
+        NSUInteger hour = [cal ordinalityOfUnit:NSCalendarUnitHour inUnit:NSCalendarUnitYear forDate:now];
+        NSLog(@"This is hour %lu of the year", hour);
+        
+        // challenge, chapter 13
+        // tell me if i'm currently in daylight savings time
+        NSTimeZone *timeZone = [NSTimeZone systemTimeZone];
+        BOOL isDaylightSavings = [timeZone isDaylightSavingTime];
+        if (isDaylightSavings) {
+            NSLog(@"We are in daylight savings.");
+        } else {
+            NSLog(@"We are not in daylight savings.");
+        }
     }
     return 0;
 }
