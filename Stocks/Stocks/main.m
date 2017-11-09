@@ -9,6 +9,7 @@
 
 #import <Foundation/Foundation.h>
 #import "StockHolding.h"
+#import "ForeignStockHolding.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -32,6 +33,13 @@ int main(int argc, const char * argv[]) {
         [stockHoldings addObject:stock1];
         [stockHoldings addObject:stock2];
         [stockHoldings addObject:stock3];
+        
+        ForeignStockHolding *fsh = [[ForeignStockHolding alloc] init];
+        [fsh setPurchaseSharePrice:2.3];
+        [fsh setCurrentSharePrice:4.5];
+        [fsh setNumberOfShares:40];
+        [fsh setConversionRate:0.94];
+        [stockHoldings addObject:fsh];
         
         for (StockHolding *sh in stockHoldings) {
             NSLog(@"Value is $%.2f", [sh valueInDollars]);
