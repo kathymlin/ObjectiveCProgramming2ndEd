@@ -2,6 +2,7 @@
 //  main.m
 //  Stocks
 //  Chapter 17 - Challenge
+//  Chapter 19 - Challenge
 //
 //  Created by Kathy Lin on 11/7/17.
 //  Copyright © 2017 Kathy Lin. All rights reserved.
@@ -10,6 +11,8 @@
 #import <Foundation/Foundation.h>
 #import "StockHolding.h"
 #import "ForeignStockHolding.h"
+#import "Portfolio.h"
+
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -44,6 +47,17 @@ int main(int argc, const char * argv[]) {
         for (StockHolding *sh in stockHoldings) {
             NSLog(@"Value is $%.2f", [sh valueInDollars]);
         }
+        
+        // Creates an instance of class Portfolio which is filled with stock holdings. Portfolios can tell you their current value.
+        
+        Portfolio *p = [[Portfolio alloc] init];
+        [p addStockHolding:stock1];
+        [p addStockHolding:stock2];
+        [p addStockHolding:stock3];
+        [p addStockHolding:fsh];
+        
+        NSLog(@"Portfolio value is $%.2f", [p valueOfPortfolio]);
+        
     }
     return 0;
 }

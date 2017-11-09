@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		447E52751FB40E7F00E3D651 /* ForeignStockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = 447E52741FB40E7F00E3D651 /* ForeignStockHolding.m */; };
+		447E527B1FB4195700E3D651 /* Portfolio.m in Sources */ = {isa = PBXBuildFile; fileRef = 447E527A1FB4195700E3D651 /* Portfolio.m */; };
 		44B7516E1FB2C2D200A3E79D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B7516D1FB2C2D200A3E79D /* main.m */; };
 		44B751791FB2C30300A3E79D /* StockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B751781FB2C30300A3E79D /* StockHolding.m */; };
 /* End PBXBuildFile section */
@@ -27,6 +28,8 @@
 /* Begin PBXFileReference section */
 		447E52731FB40E7F00E3D651 /* ForeignStockHolding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForeignStockHolding.h; sourceTree = "<group>"; };
 		447E52741FB40E7F00E3D651 /* ForeignStockHolding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForeignStockHolding.m; sourceTree = "<group>"; };
+		447E52791FB4195700E3D651 /* Portfolio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Portfolio.h; sourceTree = "<group>"; };
+		447E527A1FB4195700E3D651 /* Portfolio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Portfolio.m; sourceTree = "<group>"; };
 		44B7516A1FB2C2D200A3E79D /* Stocks */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Stocks; sourceTree = BUILT_PRODUCTS_DIR; };
 		44B7516D1FB2C2D200A3E79D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		44B751771FB2C30300A3E79D /* StockHolding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockHolding.h; sourceTree = "<group>"; };
@@ -64,6 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				44B7516D1FB2C2D200A3E79D /* main.m */,
+				447E52791FB4195700E3D651 /* Portfolio.h */,
+				447E527A1FB4195700E3D651 /* Portfolio.m */,
 				447E52731FB40E7F00E3D651 /* ForeignStockHolding.h */,
 				447E52741FB40E7F00E3D651 /* ForeignStockHolding.m */,
 				44B751771FB2C30300A3E79D /* StockHolding.h */,
@@ -129,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				447E527B1FB4195700E3D651 /* Portfolio.m in Sources */,
 				447E52751FB40E7F00E3D651 /* ForeignStockHolding.m in Sources */,
 				44B751791FB2C30300A3E79D /* StockHolding.m in Sources */,
 				44B7516E1FB2C2D200A3E79D /* main.m in Sources */,
