@@ -44,7 +44,6 @@ int main(int argc, const char * argv[]) {
         for (StockHolding *sh in stockHoldings) {
             NSLog(@"Value is $%.2f", [sh valueInDollars]);
         }
-        
     }
     return 0;
 }

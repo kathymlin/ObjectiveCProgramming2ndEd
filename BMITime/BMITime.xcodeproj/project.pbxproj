@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		447E52721FB4078200E3D651 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 447E52711FB4078200E3D651 /* Employee.m */; };
+		447E52781FB4137B00E3D651 /* Asset.m in Sources */ = {isa = PBXBuildFile; fileRef = 447E52771FB4137B00E3D651 /* Asset.m */; };
 		44B7515D1FB2BD8C00A3E79D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B7515C1FB2BD8C00A3E79D /* main.m */; };
 		44B751601FB2BDEE00A3E79D /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 44B7515F1FB2BDEE00A3E79D /* Person.m */; };
 /* End PBXBuildFile section */
@@ -27,6 +28,8 @@
 /* Begin PBXFileReference section */
 		447E52701FB4078200E3D651 /* Employee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
 		447E52711FB4078200E3D651 /* Employee.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
+		447E52761FB4137B00E3D651 /* Asset.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Asset.h; sourceTree = "<group>"; };
+		447E52771FB4137B00E3D651 /* Asset.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Asset.m; sourceTree = "<group>"; };
 		44B751521FB2BC5200A3E79D /* BMITime */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BMITime; sourceTree = BUILT_PRODUCTS_DIR; };
 		44B7515C1FB2BD8C00A3E79D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		44B7515E1FB2BDEE00A3E79D /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
@@ -68,6 +71,8 @@
 				44B7515F1FB2BDEE00A3E79D /* Person.m */,
 				447E52701FB4078200E3D651 /* Employee.h */,
 				447E52711FB4078200E3D651 /* Employee.m */,
+				447E52761FB4137B00E3D651 /* Asset.h */,
+				447E52771FB4137B00E3D651 /* Asset.m */,
 			);
 			path = BMITime;
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 			files = (
 				447E52721FB4078200E3D651 /* Employee.m in Sources */,
 				44B751601FB2BDEE00A3E79D /* Person.m in Sources */,
+				447E52781FB4137B00E3D651 /* Asset.m in Sources */,
 				44B7515D1FB2BD8C00A3E79D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
