@@ -1,7 +1,7 @@
 //
 //  main.m
 //  BMITime
-//  Chapter 17
+//  Chapter 17-20
 //
 //  Created by Kathy Lin on 11/7/17.
 //  Copyright © 2017 Kathy Lin. All rights reserved.
@@ -20,7 +20,7 @@ int main(int argc, const char * argv[]) {
         // Assign values to instance variables
         [person setWeightInKilos:96];
         [person setHeightInMeters:1.8];
-        [person setEmployeeID:15];
+        [person setEmployeeID:267575];
         
         // Get the bmi
         float bmi = [person bodyMassIndex];
@@ -37,6 +37,8 @@ int main(int argc, const char * argv[]) {
             // put the employee in the employees array
             [employees addObject:person];
         }
+        
+        NSMutableArray *allAssets = [[NSMutableArray alloc] init];
         
         // create 10 assets
         for (int i = 0; i < 10; i++) {
@@ -56,12 +58,18 @@ int main(int argc, const char * argv[]) {
             
             // assign the assset to that employee
             [randomEmployee addAssetsObject:asset];
+            
+            // add to the array holding all assets
+            [allAssets addObject:asset];
         }
         NSLog(@"Employees: %@", employees);
         NSLog(@"Giving up ownership one one employee");
         [employees removeObjectAtIndex:5];
+        NSLog(@"All assets: %@", allAssets);
         NSLog(@"Giving up ownership of array");
+        allAssets = nil;
         employees = nil; 
     }
+    sleep(100); 
     return 0;
 }
