@@ -25,7 +25,7 @@ int main(int argc, const char * argv[]) {
         __unused NSURLConnection *fetchConn = [[NSURLConnection alloc] initWithRequest:request
                                                                               delegate:logger
                                                                       startImmediately:YES];
-        
+
         // Logger receives a notification when the time zone changes
         [[NSNotificationCenter defaultCenter] addObserver:logger
                                                  selector:@selector(zoneChange:)
